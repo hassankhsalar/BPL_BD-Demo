@@ -1,0 +1,56 @@
+[
+  {
+    "playerId": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://example.com/images/virat-kohli.jpg",
+    "role": "Batsman",
+    "type": "Right-Hand Bat",
+    "price": 150
+  },
+  {
+    "playerId": 2,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://example.com/images/kane-williamson.jpg",
+    "role": "Batsman",
+    "type": "Right-Hand Bat",
+    "price": 140
+  },
+  {
+    "playerId": 3,
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "image": "https://example.com/images/pat-cummins.jpg",
+    "role": "Bowler",
+    "type": "Right-Hand Fast",
+    "price": 120
+  },
+  {
+    "playerId": 4,
+    "name": "Ben Stokes",
+    "country": "England",
+    "image": "https://example.com/images/ben-stokes.jpg",
+    "role": "All-Rounder",
+    "type": "Left-Hand Bat, Right-Hand Fast-Medium",
+    "price": 160
+  },
+  {
+    "playerId": 5,
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "image": "https://example.com/images/quinton-de-kock.jpg",
+    "role": "Wicketkeeper-Batsman",
+    "type": "Left-Hand Bat",
+    "price": 130
+  },
+  {
+    "playerId": 6,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://example.com/images/rashid-khan.jpg",
+    "role": "Bowler",
+    "type": "Right-Hand Leg Spin",
+    "price": 110
+  }
+]
