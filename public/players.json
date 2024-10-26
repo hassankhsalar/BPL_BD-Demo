@@ -52,5 +52,14 @@
     "role": "Bowler",
     "type": "Right-Hand Leg Spin",
     "price": 110000
+  },
+  {
+    "playerId": 7,
+    "name": "batu Khan",
+    "country": "Afghanistan",
+    "image": "https://i.ibb.co.com/6BcqMPw/image.png",
+    "role": "Bowler",
+    "type": "Right-Hand Leg Spin",
+    "price": 110000
   }
 ]

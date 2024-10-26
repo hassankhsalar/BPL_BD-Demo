@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Banner = ({ setCoinCount }) => {
-    // Function to handle button click
+   
     const handleClaimCredit = () => {
         setCoinCount(prevCount => prevCount + 200000);
         alert("200,000 coins have been added!");

@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
             <main className="flex-grow">
     <section className="relative">
-        {/* newsletter part */}
+    
         <div id="newsletter" className="bg-gradient-to-tr from-cyan-200 via-neutral-100 to-yellow-100 h-[384px] w-10/12 mx-auto rounded-3xl flex flex-col items-center justify-center relative z-10 -mb-48">
             <h2 className="text-xl font-bold pb-3">Subscribe To Our Newsletter</h2>
             <p className="text-sm">Get the latest updates and news right in your inbox!</p>
@@ -25,7 +25,7 @@ const Footer = () => {
     </section>
 </main>
 
-{/* Footer aligned at the bottom */}
+
 <footer className="bg-slate-900 flex flex-col justify-center items-center pt-60 relative z-0">
     <div>
         <img src="https://i.ibb.co.com/xHtCytz/logo-footer.png" alt="logo-footer" border="0" />
