@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BPL-BD</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/b678f83ade.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
     <header>
         <div class="navbar bg-base-100 w-11/12 mx-auto">
             <div class="flex-1">
@@ -27,5 +27,72 @@
             </div>
           </div>
     </header>
+
+    <section class="border-2 relative">
+      <!-- Parent Container with relative positioning -->
+      <div class="relative">
+        <!-- Background Image -->
+        <img src="https://i.ibb.co.com/R4hyM1L/bg-shadow.png" alt="bg-shadow" border="0" class="w-full h-auto">
+        
+        <!-- Floating Div Overlay -->
+        <div id="floating" class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center text-white bg-opacity-40 bg-black p-4">
+          <img src="https://i.ibb.co.com/xL6DCcQ/banner-main.png" alt="banner-main" border="0" class="mb-4">
+          <h2 class="text-2xl font-bold">Assemble Your Ultimate Dream 11 Cricket Team</h2>
+          <p class="text-lg text-gray-300">Beyond Boundaries Beyond Limits</p>
+          <button class="mt-4 px-6 py-2 bg-lime-400 text-black rounded-full hover:bg-yellow-500">Claim Free Credit</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="flex-grow">
+      <section class="relative">
+        <!-- newsletter part -->
+        <div id="newsletter" class="bg-gradient-to-tr from-cyan-200 via-neutral-100 to-yellow-100 h-[384px] w-10/12 mx-auto rounded-3xl flex flex-col items-center justify-center relative z-10 -mb-48">
+          <h2 class="text-xl font-bold pb-3">Subscribe To Our Newsletter</h2>
+          <p class="text-sm">Get the latest updates and news right in your inbox!</p>
+          <div class="flex flex-row mt-4">
+            <input type="text" placeholder="Enter your Email" class="input input-sm input-bordered text-black p-1 text-xs h-8 w-48 rounded-md" />
+            <button class="btn btn-sm bg-gradient-to-r from-orange-50 via-yellow-200 to-pink-500 text-xs px-3 py-1 h-8 border-none rounded-md">Subscribe</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer aligned at the bottom -->
+    <footer class="bg-slate-900 flex flex-col justify-center items-center pt-60 relative z-0">
+        <div>
+          <img src="https://i.ibb.co.com/xHtCytz/logo-footer.png" alt="logo-footer" border="0">
+        </div>
+        <div class="footer text-base-content p-10 flex justify-center gap-40 bg-slate-900	text-white	 h-[480px]	pt-24">
+        <nav class="w-40">
+          <h6 class="footer-title">About Us</h6>
+          <p>We are a passionate team dedicated to providing the best services to our customers.</p>
+        </nav>
+        
+        <nav>
+          <h6 class="footer-title">Quick Links</h6>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Services</a>
+          <a class="link link-hover">About</a>
+          <a class="link link-hover">Contact</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Subscribe</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Subscribe to our newsletter for the latest updates.</span>
+            </label>
+            <div class="join">
+              <input type="text" placeholder="Enter your Email" class="input input-bordered join-item text-black" />
+              <button class="btn bg-gradient-to-r from-orange-50 via-yellow-200 to-pink-500 join-item border-none">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="bg-slate-900 w-full text-center py-2">
+        <p class="text-gray-500 text-xs">@2024 Your Company All Rights Reserved.</p>
+      </div>
+    </footer>
+
 </body>
 </html>
