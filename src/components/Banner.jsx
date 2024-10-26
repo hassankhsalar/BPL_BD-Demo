@@ -1,22 +1,25 @@
 import React from 'react';
 
-const Banner = () => {
+const Banner = ({ setCoinCount }) => {
+    // Function to handle button click
+    const handleClaimCredit = () => {
+        setCoinCount(prevCount => prevCount + 200000);
+        alert("200,000 coins have been added!");
+    };
+
     return (
         <div>
-            <section className="border-2 relative">
-                {/* Parent Container with relative positioning */}
+            <section className=" relative">
                 <div className="relative">
-                    {/* Background Image */}
                     <img 
                         src="https://i.ibb.co.com/R4hyM1L/bg-shadow.png" 
                         alt="bg-shadow" 
                         border="0" 
-                        className="w-full h-auto" 
+                        className="w-10/12 h-5/6 rounded-3xl mx-auto bg-black" 
                     />
-                    {/* Floating Div Overlay */}
                     <div 
                         id="floating" 
-                        className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center text-white bg-opacity-40 bg-black p-4"
+                        className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center text-white bg-opacity-40 p-4"
                     >
                         <img 
                             src="https://i.ibb.co.com/xL6DCcQ/banner-main.png" 
@@ -26,7 +29,12 @@ const Banner = () => {
                         />
                         <h2 className="text-2xl font-bold">Assemble Your Ultimate Dream 11 Cricket Team</h2>
                         <p className="text-lg text-gray-300">Beyond Boundaries Beyond Limits</p>
-                        <button className="mt-4 px-6 py-2 bg-lime-400 text-black rounded-full hover:bg-yellow-500">Claim Free Credit</button>
+                        <button 
+                            onClick={handleClaimCredit} 
+                            className="text-black font-semibold mt-4 bg-gradient-to-r from-orange-50 via-yellow-200 to-pink-500 text-xs px-3 py-2 h-8 border-none rounded-md hover:bg-yellow-500"
+                        >
+                            Claim Free Credit
+                        </button>
                     </div>
                 </div>
             </section>

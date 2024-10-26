@@ -1,22 +1,22 @@
+import { useState } from 'react';
 import Banner from "./components/Banner";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Players from "./components/Players";
 
 const App = () => {
-  return (
-    <div>
-      {/* header */}
-      <Header/>
-      {/* banner */}
-      <Banner/>
-      {/* player cards list */}
-      <Players/>
-      {/* footer */}
-      <Footer/>
+    // State to manage the coin count
+    const [coinCount, setCoinCount] = useState(0);
 
-    </div>
-  );
+    return (
+        <div>
+            {/* Passing coinCount to Header, and setCoinCount to Banner */}
+            <Header coinCount={coinCount} />
+            <Banner setCoinCount={setCoinCount} />
+            <Players />
+            <Footer />
+        </div>
+    );
 };
 
 export default App;
